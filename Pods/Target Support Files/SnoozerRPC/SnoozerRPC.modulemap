@@ -1,0 +1,6 @@
+framework module SnoozerRPC {
+  umbrella header "SnoozerRPC-umbrella.h"
+
+  export *
+  module * { export * }
+}
