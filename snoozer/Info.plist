@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>snoozer</string>
+				<string>com.kamidude.snoozer</string>
 			</array>
 		</dict>
 	</array>

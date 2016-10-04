@@ -8,6 +8,8 @@ target 'snoozer' do
 
   pod 'SnoozerRPC', :path => '.'
   pod 'OAuthSwift', :git => 'https://github.com/OAuthSwift/OAuthSwift.git', :branch => 'master'
+  pod 'SnapKit', '~> 3.0'
+  pod 'MGSwipeTableCell'
 end
 
 post_install do |installer|

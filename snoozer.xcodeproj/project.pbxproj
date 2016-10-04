@@ -8,16 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		86F3AB3A6269B3387B463586 /* Pods_snoozer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF73306939BE03CF28739535 /* Pods_snoozer.framework */; };
+		9813590E1DA3EF960010CB4F /* SNZSnoozer+Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813590D1DA3EF960010CB4F /* SNZSnoozer+Impl.swift */; };
+		981359101DA3F2950010CB4F /* OAuth2Swift+Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813590F1DA3F2950010CB4F /* OAuth2Swift+Credentials.swift */; };
+		981359121DA3FC840010CB4F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981359111DA3FC840010CB4F /* TaskViewController.swift */; };
+		981359141DA4062E0010CB4F /* Date+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981359131DA4062E0010CB4F /* Date+Convert.swift */; };
+		981359161DA40A0F0010CB4F /* Designs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981359151DA40A0F0010CB4F /* Designs.swift */; };
+		989A90911DA415E600BEE9DA /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A90901DA415E600BEE9DA /* UIViewController+Toast.swift */; };
 		98C9EA0B1DA3B802005E7AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9EA0A1DA3B802005E7AB1 /* AppDelegate.swift */; };
-		98C9EA0D1DA3B802005E7AB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9EA0C1DA3B802005E7AB1 /* ViewController.swift */; };
+		98C9EA0D1DA3B802005E7AB1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C9EA0C1DA3B802005E7AB1 /* HomeViewController.swift */; };
 		98C9EA121DA3B802005E7AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C9EA111DA3B802005E7AB1 /* Assets.xcassets */; };
 		98C9EA151DA3B802005E7AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C9EA131DA3B802005E7AB1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9813590D1DA3EF960010CB4F /* SNZSnoozer+Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SNZSnoozer+Impl.swift"; sourceTree = "<group>"; };
+		9813590F1DA3F2950010CB4F /* OAuth2Swift+Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OAuth2Swift+Credentials.swift"; sourceTree = "<group>"; };
+		981359111DA3FC840010CB4F /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		981359131DA4062E0010CB4F /* Date+Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Convert.swift"; sourceTree = "<group>"; };
+		981359151DA40A0F0010CB4F /* Designs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designs.swift; sourceTree = "<group>"; };
+		989A90901DA415E600BEE9DA /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		98C9EA071DA3B802005E7AB1 /* snoozer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snoozer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C9EA0A1DA3B802005E7AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98C9EA0C1DA3B802005E7AB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98C9EA0C1DA3B802005E7AB1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		98C9EA111DA3B802005E7AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98C9EA141DA3B802005E7AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98C9EA161DA3B802005E7AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,11 +88,17 @@
 		98C9EA091DA3B802005E7AB1 /* snoozer */ = {
 			isa = PBXGroup;
 			children = (
+				9813590D1DA3EF960010CB4F /* SNZSnoozer+Impl.swift */,
+				9813590F1DA3F2950010CB4F /* OAuth2Swift+Credentials.swift */,
 				98C9EA0A1DA3B802005E7AB1 /* AppDelegate.swift */,
-				98C9EA0C1DA3B802005E7AB1 /* ViewController.swift */,
+				98C9EA0C1DA3B802005E7AB1 /* HomeViewController.swift */,
+				981359111DA3FC840010CB4F /* TaskViewController.swift */,
 				98C9EA111DA3B802005E7AB1 /* Assets.xcassets */,
 				98C9EA131DA3B802005E7AB1 /* LaunchScreen.storyboard */,
 				98C9EA161DA3B802005E7AB1 /* Info.plist */,
+				981359131DA4062E0010CB4F /* Date+Convert.swift */,
+				981359151DA40A0F0010CB4F /* Designs.swift */,
+				989A90901DA415E600BEE9DA /* UIViewController+Toast.swift */,
 			);
 			path = snoozer;
 			sourceTree = "<group>";
@@ -208,8 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98C9EA0D1DA3B802005E7AB1 /* ViewController.swift in Sources */,
+				98C9EA0D1DA3B802005E7AB1 /* HomeViewController.swift in Sources */,
 				98C9EA0B1DA3B802005E7AB1 /* AppDelegate.swift in Sources */,
+				989A90911DA415E600BEE9DA /* UIViewController+Toast.swift in Sources */,
+				981359121DA3FC840010CB4F /* TaskViewController.swift in Sources */,
+				981359161DA40A0F0010CB4F /* Designs.swift in Sources */,
+				981359141DA4062E0010CB4F /* Date+Convert.swift in Sources */,
+				981359101DA3F2950010CB4F /* OAuth2Swift+Credentials.swift in Sources */,
+				9813590E1DA3EF960010CB4F /* SNZSnoozer+Impl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +269,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -322,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAD86198B67EA0BC501CB63F /* Pods-snoozer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 64F4JG42ZZ;
@@ -338,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6069A731CB800F812993795 /* Pods-snoozer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 64F4JG42ZZ;

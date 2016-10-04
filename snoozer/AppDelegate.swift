@@ -17,18 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
         
-        window?.rootViewController = ViewController()
+        window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
         window?.makeKeyAndVisible()
         
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        if (url.host == "oauth-callback" && options[.sourceApplication] as? String == "com.apple.SafariViewService") {
+        if (url.path.hasPrefix("/oauth-callback/") && options[.sourceApplication] as? String == "com.apple.SafariViewService") {
             OAuthSwift.handle(url: url)
             return true
         }
-        return false;
+        return false
     }
 }
 

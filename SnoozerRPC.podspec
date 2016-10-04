@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'SnoozerRPC'
-  s.version  = '0.0.1'
+  s.version  = '0.0.7'
   s.license  = 'MIT'
   s.authors  = { 'Jérémie Girault' => 'jeremie.girault@gmail.com' }
   s.homepage = '...'
@@ -30,7 +30,10 @@ Pod::Spec.new do |s|
   # Run protoc with the Objective-C and gRPC plugins to generate protocol messages and gRPC clients.
   # You can run this command manually if you later change your protos and need to regenerate.
   # Alternatively, you can advance the version of this podspec and run `pod update`.
+  timestamp = `date +"%T"`
+
   s.prepare_command = <<-CMD
+    curl -H 'Cache-Control: no-cache' -o #{src}/snoozer.proto https://raw.githubusercontent.com/adrienjoly/snoozer-server/master/snoozer.proto\?c\=#{timestamp}
     mkdir -p #{dir}
     #{protoc} \
         --plugin=protoc-gen-grpc=#{plugin} \

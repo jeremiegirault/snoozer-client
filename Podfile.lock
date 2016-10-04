@@ -25,22 +25,26 @@ PODS:
     - gRPC-RxLibrary (= 1.0.0)
     - Protobuf (~> 3.0)
   - gRPC-RxLibrary (1.0.0)
+  - MGSwipeTableCell (1.5.6)
   - OAuthSwift (1.0.0)
   - Protobuf (3.1.0)
-  - SnoozerRPC (0.0.1):
+  - SnapKit (3.0.1)
+  - SnoozerRPC (0.0.7):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
-    - SnoozerRPC/Messages (= 0.0.1)
-    - SnoozerRPC/Services (= 0.0.1)
-  - SnoozerRPC/Messages (0.0.1):
+    - SnoozerRPC/Messages (= 0.0.7)
+    - SnoozerRPC/Services (= 0.0.7)
+  - SnoozerRPC/Messages (0.0.7):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
     - Protobuf
-  - SnoozerRPC/Services (0.0.1):
+  - SnoozerRPC/Services (0.0.7):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
     - gRPC-ProtoRPC
     - SnoozerRPC/Messages
 
 DEPENDENCIES:
+  - MGSwipeTableCell
   - OAuthSwift (from `https://github.com/OAuthSwift/OAuthSwift.git`, branch `master`)
+  - SnapKit (~> 3.0)
   - SnoozerRPC (from `.`)
 
 EXTERNAL SOURCES:
@@ -63,10 +67,12 @@ SPEC CHECKSUMS:
   gRPC-Core: 7ce9d18a7fb9fffc0f57646608d0741782b16996
   gRPC-ProtoRPC: 51745b5ebe4a844dc6e1ecf767d74ae3d124ea1e
   gRPC-RxLibrary: 3a8c5543115fb2183ed5624678e7ecbac5e9e4ad
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
   OAuthSwift: '08e79dc7c071418daeb9a4752a81141b1d9acc63'
   Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
-  SnoozerRPC: 4e6ba6dccc7bcf75ab1ec1971a259af8780b3a4b
+  SnapKit: f818b8326d45b4e1c777d0ab27b5c0a3624bfdeb
+  SnoozerRPC: 85ad48ca434d57287e3c7a1d1f406eb63ce102c2
 
-PODFILE CHECKSUM: 1a0f452376977b2b90995e5449cac8cac1e06eec
+PODFILE CHECKSUM: c888cf3aba8a501aec19a5728b619689e702e461
 
 COCOAPODS: 1.0.1

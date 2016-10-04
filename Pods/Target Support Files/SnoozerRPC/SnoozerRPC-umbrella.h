@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 
-#import "Helloworld.pbobjc.h"
-#import "Helloworld.pbrpc.h"
+#import "Snoozer.pbobjc.h"
+#import "Snoozer.pbrpc.h"
 
 FOUNDATION_EXPORT double SnoozerRPCVersionNumber;
 FOUNDATION_EXPORT const unsigned char SnoozerRPCVersionString[];

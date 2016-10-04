@@ -1,6 +1,6 @@
 {
   "name": "SnoozerRPC",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "license": "MIT",
   "authors": {
     "Jérémie Girault": "jeremie.girault@gmail.com"
@@ -19,7 +19,7 @@
       "~> 1.0"
     ]
   },
-  "prepare_command": "mkdir -p Pods/SnoozerRPC\nPods/!ProtoCompiler/protoc         --plugin=protoc-gen-grpc=Pods/!ProtoCompiler-gRPCPlugin/grpc_objective_c_plugin         --objc_out=Pods/SnoozerRPC         --grpc_out=Pods/SnoozerRPC         -I .         -I Pods/!ProtoCompiler         ./*.proto",
+  "prepare_command": "curl -H 'Cache-Control: no-cache' -o ./snoozer.proto https://raw.githubusercontent.com/adrienjoly/snoozer-server/master/snoozer.proto?c=19:15:18\n\nmkdir -p Pods/SnoozerRPC\nPods/!ProtoCompiler/protoc         --plugin=protoc-gen-grpc=Pods/!ProtoCompiler-gRPCPlugin/grpc_objective_c_plugin         --objc_out=Pods/SnoozerRPC         --grpc_out=Pods/SnoozerRPC         -I .         -I Pods/!ProtoCompiler         ./*.proto",
   "pod_target_xcconfig": {
     "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1",
     "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
