@@ -13,13 +13,10 @@ class ViewController: UIViewController {
 
     let host = "192.168.1.27:50051"
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         GRPCCall.useInsecureConnections(forHost: host)
-        //[GRPCCall useInsecureConnectionsForHost:kHostAddress];
-        //[GRPCCall setUserAgentPrefix:@"HelloWorld/1.0" forHost:kHostAddress];
         
         let greeter = HLWGreeter(host: host)
         let req = HLWHelloRequest()

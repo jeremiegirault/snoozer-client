@@ -25,6 +25,7 @@ PODS:
     - gRPC-RxLibrary (= 1.0.0)
     - Protobuf (~> 3.0)
   - gRPC-RxLibrary (1.0.0)
+  - OAuthSwift (1.0.0)
   - Protobuf (3.1.0)
   - SnoozerRPC (0.0.1):
     - "!ProtoCompiler-gRPCPlugin (~> 1.0)"
@@ -39,11 +40,20 @@ PODS:
     - SnoozerRPC/Messages
 
 DEPENDENCIES:
+  - OAuthSwift (from `https://github.com/OAuthSwift/OAuthSwift.git`, branch `master`)
   - SnoozerRPC (from `.`)
 
 EXTERNAL SOURCES:
+  OAuthSwift:
+    :branch: master
+    :git: https://github.com/OAuthSwift/OAuthSwift.git
   SnoozerRPC:
     :path: "."
+
+CHECKOUT OPTIONS:
+  OAuthSwift:
+    :commit: 3d0f81ae5c4cf2e1509481b7ff97f9c33a519622
+    :git: https://github.com/OAuthSwift/OAuthSwift.git
 
 SPEC CHECKSUMS:
   "!ProtoCompiler": b2bedbd8cbdafca8f73c2c52abfcc1a5ce0f5ff7
@@ -53,9 +63,10 @@ SPEC CHECKSUMS:
   gRPC-Core: 7ce9d18a7fb9fffc0f57646608d0741782b16996
   gRPC-ProtoRPC: 51745b5ebe4a844dc6e1ecf767d74ae3d124ea1e
   gRPC-RxLibrary: 3a8c5543115fb2183ed5624678e7ecbac5e9e4ad
+  OAuthSwift: '08e79dc7c071418daeb9a4752a81141b1d9acc63'
   Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
   SnoozerRPC: 4e6ba6dccc7bcf75ab1ec1971a259af8780b3a4b
 
-PODFILE CHECKSUM: 831918e8c53dccf2e493624e81a335c6fc4bffb1
+PODFILE CHECKSUM: 1a0f452376977b2b90995e5449cac8cac1e06eec
 
 COCOAPODS: 1.0.1
